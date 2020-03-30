@@ -2,15 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <title>HTML Academy: кэт энерджи главная</title>
   </head>
 
   <body>
     <div class="page-wrapper">
       <header class="page-header">
-        <a href="index.html" class="logo page-header__logo">
-          <img class="logo-image page-header__logo-image" src="#" width="191" height="39" alt="логотип сайта кэт энерджи">
+        <a href="index.html" class="page-header__logo">
+          <img class="logo page-header__logo-image" src="#" width="191" height="39" alt="логотип сайта кэт энерджи">
         </a>
         <nav class="main-nav page-header__main-nav">
           <button class="open-button main-nav__open-button"><img class="open-button-image" src="#" width="25" height="19" alt="кнопка открытия навигации"></button>
@@ -35,12 +34,10 @@
         <section class="hero">
           <h1 class="hero__title">функциональное питание для котов</h1>
           <p class="hero__slogan">занялся собой? Займись котом!</p>
-          <img class="hero__image" src="#" width="280" heigh="270" alt="продукция кэт энерджи">
+          <img class="hero__image" src="#" width="280" height="270" alt="продукция кэт энерджи">
         </section>
 
-        <div class="form-link">
-          <a href="form.html">подобрать программу</a>
-        </div>
+         <a class="button page-main__button" href="form.html">подобрать программу</a>
 
         <section class="perks">
           <h2 class="perks__heading visually-hidden">выбор продукции</h2>
@@ -48,7 +45,7 @@
             <li class="list-of-perks_item">
               <h3 class="list-of-perks__heading list-of-perks__heading--icon-slim">похудение</h3>
               <p class="list-of-perks__desc">ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="list-of-perks__link" chref="#">
+              <a class="list-of-perks__link" href="#">
                 Каталог Slim
                 <img class="link-image list-of-perks__image" src ="#" width="25" height="12" alt="ссылка перехода в каталог">
               </a>
@@ -86,27 +83,29 @@
       </main>
 
       <footer class="page-footer">
-        <a href="index.html" class="logo--mini page-footer__logo">
-          <img class="mini-logo-image page-footer__mini-logo-image" src="#" width="128" height="24" alt="логотип сайта кэт энерджи">
-        </a>
-
-        <ul class="social-list page-footer__list">
-          <li class="vk-icon social-list__item">
-            <a href="#">вконтакте</a>
-          </li>
-          <li class="inst-icon social-list__item">
-            <a href="#">нстаграм</a>
-          </li>
-          <li class="fb-icon social-list__item">
-            <a href="#">фэйсбук</a>
-          </li>
-        </ul>
-
-        <div class="copyright-section page-footer__copyright">
-          <a class="copyright-link copyright-section__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright-slogan copyright-section__slogan">HTML Academy</p>
-            <p class="copyright-logo copyright-section__logo">логотип</p>
+        <div class="page-footer__wrapper">
+          <a href="index.html" class="page-footer__logo">
+            <img class="mini-logo page-footer__mini-logo-image" src="#" width="128" height="24" alt="логотип сайта кэт энерджи">
           </a>
+
+          <ul class="social-list page-footer__list">
+            <li class="vk-icon social-list__item">
+              <a href="#">вконтакте</a>
+            </li>
+            <li class="inst-icon social-list__item">
+              <a href="#">нстаграм</a>
+            </li>
+            <li class="fb-icon social-list__item">
+              <a href="#">фэйсбук</a>
+            </li>
+          </ul>
+
+          <div class="copyright-section page-footer__copyright">
+            <a class="copyright-link copyright-section__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright-slogan copyright-section__slogan">HTML Academy</p>
+              <p class="copyright-logo copyright-section__logo">логотип</p>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
