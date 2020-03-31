@@ -30,17 +30,117 @@
         </nav>
       </header>
 
-      <main>
-        <!--Здесь будут блоки из второй части задания -->
+      <main class="page-main">
+        <!-- Здесь блоки из второй части задания -->
+        <section class="form-logo">
+          <h1 class="form-logo__heading">Подбор программы</h1>
+          <p class="form-logo__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </section>
+
+        <section class="form-section">
+          <form class="main-form form-section__main-form" action="#" method="post">
+
+            <div class="data-field main-form__data-field data-field--page-divider">
+              <p class="data-item data-field__data-item">
+                <label class="data-label data-item__data-label" for="name-field">Имя:*</label>
+                <input class="input-field data-item__input-field input-field--name-input" type="text" name="name-field" id="name-field" placeholder="Барсик" required>
+              </p>
+
+              <p class="data-item data-field__data-item">
+                <label class="data-label data-item__data-label" for="weight-field">Вес (кг):*</label>
+                <input class="input-field data-item__input-field input-field--weight-input" type="number" name="weight-field" id="weight-field" placeholder="7" required>
+              </p>
+
+              <p class="data-item data-field__data-item">
+                <label class="data-label data-item__data-label" for="age-field">Возраст (лет):</label>
+                <input class="input-field data-item__input-field input-field--age-input" type="number" name="age-field" id="age-field" placeholder="7">
+              </p>
+            </div>
+
+            <ul class="radio-list main-form__radio-list">
+              <li class="radio-item radio-list__radio-item">
+                <input class="radio-item__input" type="radio" name="program" id="slim" checked>
+                <label class="radio-label radio-item__radio-label radio-label--custom-radio" for="slim">Похудение</label>
+              </li>
+              <li class="program-item program-field__program-item">
+                <input class="radio-item__input" type="radio" name="program" id="bulk">
+                <label class="radio-label radio-item__radio-label radio-label--custom-radio" for="bulk">Набор массы</label>
+              </li>
+              <li class="program-item program-field__program-item">
+                <input class="radio-item__input" type="radio" name="program" id="help">
+                <label class="radio-label radio-item__radio-label radio-label--custom-radio" for="help">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+
+
+            <div class="contacts-field main-form__contacts-field">
+              <h2 class="caontacts-field__heading caontacts-field__heading--green-divider-small">Контактные данные (владельца кота)</h2>
+
+              <p class="contacts-item contacts-field__contacs-item">
+                <label class="contacts-label contacts-item__contacts-label" for="email-field">E-mail:*</label>
+                <input class="input-field contacts-item__input-field input-field--email-field input-field--icon-email" type="email" name="email-field" id="email-field" required placeholder="kuklachev@gmail.com">
+              </p>
+
+              <p class="contacts-item contacts-field__contacs-item">
+                <label class="contacts-label contacts-item__contacts-label" for="tel-feild">Телефон:*</label>
+                <input class="input-field contacts-item__input-field input-field--tel-field input-field--icon-tel" type="tel" name="tel-feild" id="tel-feild" required placeholder="8 (960) 900-60-90">
+              </p>
+            </div>
+
+            <div class="comment-field main-form__comment-field">
+              <h2 class="comment-field__heading comment-field__heading--green-divider-large">Комментарий</h2>
+              <textarea class="comment-area comment-field__comment-area" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+            </div>
+
+            <div class="add-field main-form__add-field">
+              <h2 class="add-field__heading add-field__heading--green-divider-medium">Дополнительно</h2>
+              <ul class="add-list aldd-field__add-list">
+                <li class="add-list-item add-list__add-list-item">
+                  <input class="add-input" type="checkbox" name="shugar-free" id="shugar-free" checked>
+                  <label class="add-label add-list-item__add-label add-label--custom-box" for="shugar-free">Сахарозаменитель</label>
+                </li>
+                <li class="add-list-item add-list__add-list-item">
+                  <input class="add-input" type="checkbox" name="water" id="water">
+                  <label class="add-label add-list-item__add-label add-label--custom-box" for="water">Питьевая вода</label>
+                </li>
+                <li class="add-list-item add-list__add-list-item">
+                  <input class="add-input" type="checkbox" name="milk" id="milk">
+                  <label class="add-label add-list-item__add-label add-label--custom-box" for="milk">Молоко</label>
+                </li>
+                <li class="add-list-item add-list__add-list-item">
+                  <input class="add-input" type="checkbox" name="vits" id="vits">
+                  <label class="add-label add-list-item__add-label add-label--custom-box" for="vits">Витамины</label>
+                </li>
+              </ul>
+            </div>
+            <input class="button main-form__button" type="submit" value="Отправить заявку">
+          </form>
+          <p class="form-section__text">* — Обязательные поля</p>
+        </section> -->
       </main>
 
       <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <a href="index.html" class="page-footer__logo">
-            <img class="mini-logo page-footer__mini-logo-image" src="#" width="128" height="24" alt="логотип сайта кэт энерджи">
+        <section class="footer-wrapper page-footer__footer-wrapper">
+          <h2 class="footer-wrapper__heading visually-hidden">Контакты и информация</h2>
+          <!-- Здесь блоки из второй части задания -->
+          <div class="contacts foter-wrapper__contacts">
+            <div class="contacts__text">
+              <p>приглашаем к сотрудничеству дилеров!</p>
+            </div>
+            <div class="contacts__point">
+              <address >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            </div>
+          </div>
+
+          <div class="map footer-wrapper__map">
+            <!-- Здесь будет интерактивная карта -->
+          </div> -->
+
+          <a href="index.html" class="footer-wrapper__logo footer-wraper__logo--footer-divider">
+            <img class="mini-logo" src="#" width="128" height="24" alt="логотип сайта кэт энерджи">
           </a>
 
-          <ul class="social-list page-footer__list">
+          <ul class="social-list footer-wrapper__list social-list--footer-divider">
             <li class="vk-icon social-list__item">
               <a href="#">вконтакте</a>
             </li>
@@ -52,13 +152,13 @@
             </li>
           </ul>
 
-          <div class="copyright-section page-footer__copyright">
+          <div class="copyright-section footer-wrapper__copyright">
             <a class="copyright-link copyright-section__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright-slogan copyright-section__slogan">HTML Academy</p>
               <p class="copyright-logo copyright-section__logo">логотип</p>
             </a>
           </div>
-        </div>
+        </section>
       </footer>
     </div>
   </body>
