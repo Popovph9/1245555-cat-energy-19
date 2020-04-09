@@ -1,0 +1,46 @@
+.list-of-perks {
+  list-style: none;
+}
+
+.list-of-perks__item {
+  background-color: @color-block;
+}
+
+.list-of-perks__heading {
+  position: relative;
+  .heading-medm();
+}
+
+.list-of-perks__heading::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: @color-bg-lo;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.list-of-perks__text {
+  position: relative;
+  .text-main();
+}
+
+.list-of-perks__text::after {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  content: "";
+  width: 240px;
+  height: 1px;
+  background-color: @color-footer-divider;
+}
+
+.list-of-perks__link {
+  font-family: "Oswald-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @color-font-sec;
+}
