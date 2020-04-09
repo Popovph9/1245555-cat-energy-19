@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: кэт энерджи форма</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <div>
+    <div class="page-wrapper">
       <header class="page-header">
         <a class="page-header__logo">
           <img class="logo page-header__logo-image" src="#" width="191" height="39" alt="логотип сайта кэт энерджи">
         </a>
-        <nav class="main-nav page-header__main-nav">
-          <button class="open-button main-nav__open-button"><img class="open-button-image" src="#" width="25" height="19" alt="кнопка открытия навигации"></button>
-          <button class="close-button main-nav__close-button"><img class="close-button-image" src="#" width="19" height="19" alt="кнопка закрытия навигации"></button>
+        <nav class="main-nav main-nav--opened page-header__main-nav">
+          <button class="toggle-button main-nav__toggle-button"><span class="visually-hidden">кнопка меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="site-list  main-nav__list">
               <li class="site-list__item">
@@ -77,12 +77,12 @@
               <h2 class="contacts-field__heading contacts-field__heading--green-divider-small">Контактные данные (владельца кота)</h2>
 
               <p class="contacts-item contacts-field__contacs-item">
-                <label class="contacts-label contacts-item__contacts-label" for="email-field">E-mail:*</label>
+                <label class="data-label contacts-item__data-label" for="email-field">E-mail:*</label>
                 <input class="input-field contacts-item__input-field input-field--email-field input-field--icon-email" type="email" name="email-field" id="email-field" required placeholder="kuklachev@gmail.com">
               </p>
 
               <p class="contacts-item contacts-field__contacs-item">
-                <label class="contacts-label contacts-item__contacts-label" for="tel-feild">Телефон:*</label>
+                <label class="data-label contacts-item__data-label" for="tel-feild">Телефон:*</label>
                 <input class="input-field contacts-item__input-field input-field--tel-field input-field--icon-tel" type="tel" name="tel-feild" id="tel-feild" required placeholder="8 (960) 900-60-90">
               </p>
             </div>
@@ -97,26 +97,26 @@
               <ul class="add-list add-field__add-list">
                 <li class="add-list-item add-list__add-list-item">
                   <input class="add-input" type="checkbox" name="shugar-free" id="shugar-free" checked>
-                  <label class="add-label add-list-item__add-label add-label--custom-box" for="shugar-free">Сахарозаменитель</label>
+                  <label class="data-label add-list-item__data-label data-label--custom-box" for="shugar-free">Сахарозаменитель</label>
                 </li>
                 <li class="add-list-item add-list__add-list-item">
                   <input class="add-input" type="checkbox" name="water" id="water">
-                  <label class="add-label add-list-item__add-label add-label--custom-box" for="water">Питьевая вода</label>
+                  <label class="data-label add-list-item__data-label data-label--custom-box" for="water">Питьевая вода</label>
                 </li>
                 <li class="add-list-item add-list__add-list-item">
                   <input class="add-input" type="checkbox" name="milk" id="milk">
-                  <label class="add-label add-list-item__add-label add-label--custom-box" for="milk">Молоко</label>
+                  <label class="data-label add-list-item__data-label data-label--custom-box" for="milk">Молоко</label>
                 </li>
                 <li class="add-list-item add-list__add-list-item">
                   <input class="add-input" type="checkbox" name="vits" id="vits">
-                  <label class="add-label add-list-item__add-label add-label--custom-box" for="vits">Витамины</label>
+                  <label class="data-label add-list-item__data-label data-label--custom-box" for="vits">Витамины</label>
                 </li>
               </ul>
             </div>
-            <input class="button main-form__button" type="submit" value="Отправить заявку">
+            <input class="button button--form-button main-form__button" type="submit" value="Отправить заявку">
           </form>
-          <p class="form-section__text">* — Обязательные поля</p>
-        </section> -->
+          <p class="text-req form-section__text-req">* — Обязательные поля</p>
+        </section>
       </main>
 
       <footer class="page-footer">
@@ -128,7 +128,7 @@
               <p>приглашаем к сотрудничеству дилеров!</p>
             </div>
             <div class="contacts__point">
-              <address >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+              <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
             </div>
           </div>
 

@@ -1,0 +1,48 @@
+.main-nav {
+  position: relative;
+  margin: 0 auto;
+  background-color: @color-bg-main;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+
+  width: 19px;
+  height: 19px;
+
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.main-nav--closed .main-nav__toggle-button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  content: url("../img/icon-mobile-menu.svg");
+
+  width: 25px;
+  height: 19px;
+}
+
+.main-nav--opened .main-nav__toggle-button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  content: url("../img/icon-close.svg");
+
+  width: 19px;
+  height: 19px;
+}
