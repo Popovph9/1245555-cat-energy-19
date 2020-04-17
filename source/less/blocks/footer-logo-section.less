@@ -1,0 +1,19 @@
+.footer-logo-section {
+  position: relative;
+}
+
+.footer-logo-section--footer-divider::after {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: @color-footer-divider;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-logo-section--footer-divider::after {
+    display: none;
+  }
+}

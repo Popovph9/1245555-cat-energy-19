@@ -4,8 +4,20 @@
   line-height: 18px;
 }
 
+.font-number {
+  font-size: 281px;
+  line-height: 281px;
+  color: @color-numb;
+}
+
 .heading-bigm {
   font-size: 36px;
+  line-height: 60px;
+  color: @color-font-sec;
+}
+
+.heading-bigt {
+  font-size: 60px;
   line-height: 60px;
   color: @color-font-sec;
 }
@@ -13,6 +25,20 @@
 .heading-medm {
   font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
+  color: @color-font-sec;
+}
+
+.heading-medt {
+  font-size: 36px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: @color-font-sec;
+}
+
+.heading-lowt {
+  font-size: 36px;
+  line-height: 36px;
   text-transform: uppercase;
   color: @color-font-sec;
 }
@@ -25,12 +51,35 @@
   color: @color-font-sec;
 }
 
+.heading-navt {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: @color-font-fth;
+}
+
+.heading-navd {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: @color-font-sec;
+}
 
 .heading-catlm {
   font-size: 16px;
   line-height: 20px;
   color: @color-font-sec;
   text-transform: uppercase;
+}
+
+.heading-catlt {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @color-font-sec;
 }
 
 .heading__formmb {
@@ -53,12 +102,32 @@
   color: @color-font-main;
 }
 
+.text-catalt {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: @color-font-main;
+}
+
+.text-maint {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: @color-font-main;
+}
+
 .heading-labm {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: @color-font-fth;
 }
+
+.heading-labt {
+  font-size: 20px;
+  line-height: 20px;
+}
+
 
 .placeholder {
   &::-webkit-input-placeholder {
@@ -94,6 +163,28 @@
   }
 }
 
+.placeholdert {
+  &::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:-moz-placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &::-moz-placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:-ms-input-placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .input-state {
   border: 1px solid @color-border;
 
@@ -110,4 +201,22 @@
 .button-mob {
   width: 280px;
   height: 40px;
+}
+
+.button-tab {
+  width: 249px;
+}
+
+.button-desc {
+  width: 169px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.outline {
+  outline: 1px solid seagreen;
 }

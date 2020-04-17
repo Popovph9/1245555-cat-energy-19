@@ -17,3 +17,30 @@
   color: @color-font-sec;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .example__heading {
+    .heading-bigt();
+  }
+
+  .example__text {
+    .text-maint();
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__image {
+    width: 690px;
+    height: 517px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__image {
+    width: 690px;
+    height: 517px;
+  }
+}

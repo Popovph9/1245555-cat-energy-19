@@ -1,6 +1,10 @@
 .hero {
-  background: url("../img/index-background-mobile@1x.jpg") center no-repeat;
-  background-color: @color-bg-sec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
+  background-color: @color-bg-main;
 }
 
 .hero__title {
@@ -14,4 +18,42 @@
   line-height: 14px;
   text-transform: uppercase;
   color: @color-font-thr;
+}
+
+@media (min-width: @tablet-width) {
+  .hero {
+    background: none;
+    background-color: @color-bg-main;
+  }
+
+  .hero__title {
+    .heading-bigt();
+    text-align: left;
+
+    width: 410px;
+  }
+
+  .hero__image {
+    width: 709px;
+    height: 609px;
+  }
+
+  .hero__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @color-font-sec;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    background: url("../img/index-background-desktop@1x.jpg") right top no-repeat;
+    background-color: @color-bg-main;
+  }
+
+  .hero__image {
+    width: 552px;
+    height: 499px;
+  }
 }

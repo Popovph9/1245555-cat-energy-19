@@ -11,7 +11,7 @@
   .heading-medm();
 }
 
-.list-of-perks__heading::before {
+.list-of-perks__heading::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,6 +20,26 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.list-of-perks__icon-slim::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("../img/icon-cat-slim.svg");
+  width: 35px;
+  height: 49px;
+  z-index: 2;
+}
+
+.list-of-perks__icon-bulk::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("../img/icon-cat-pro.svg");
+  width: 67px;
+  height: 28px;
+  z-index: 2;
 }
 
 .list-of-perks__text {
@@ -43,4 +63,55 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @color-font-sec;
+}
+
+@media (min-width: @tablet-width) {
+  .list-of-perks__heading {
+    .heading-medt();
+
+    &::after {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .list-of-perks__text {
+    .text-maint();
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .list-of-perks__icon-slim::before {
+    width: 141px;
+    height: 194px;
+  }
+
+  .list-of-perks__icon-bulk::before {
+    width: 268px;
+    height: 113px;
+  }
+
+  .list-of-perks__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-of-perks__heading::after {
+    width: 100px;
+    height: 100px;
+  }
+
+  .list-of-perks__icon-slim::before {
+    width: 71px;
+    height: 97px;
+  }
+
+  .list-of-perks__icon-bulk::before {
+    width: 134px;
+    height: 57px;
+  }
 }
