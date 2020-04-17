@@ -1,0 +1,31 @@
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.social-list__item:hover path,
+.social-list__item:focus path {
+  fill: @color-butt;
+}
+
+.social-list__item:active path {
+  opacity: 0.3;
+}
+
+.social-list--footer-divider::after {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: @color-footer-divider;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list--footer-divider::after {
+    display: none;
+  }
+}

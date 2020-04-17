@@ -2,6 +2,45 @@
   .heading-navm();
 }
 
-.site-list a {
-  color: @color-font-sec;
+.site-list__item {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+
+  padding: 10px 0;
+
+  border-top: 1px solid @color-border;
+
+  &:last-of-type {
+    border-bottom: 1px solid @color-border;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    .heading-navt();
+
+    display: flex;
+
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    display: flex;
+    border: none;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    .heading-navd();
+  }
+
+  .site-list--index {
+    color: @color-font-thr;
+  }
 }

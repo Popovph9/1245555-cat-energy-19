@@ -1,3 +1,33 @@
 .page-header {
-  background-color: @color-bg-main;
+  border-bottom: 1px solid @color-pgdivider;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+    border: none;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header--desck-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    justify-content: space-between;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
+  }
 }

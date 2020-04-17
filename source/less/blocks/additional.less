@@ -1,5 +1,67 @@
 .additional__heading {
+  position: relative;
+
   font-size: 24px;
   line-height: 24px;
   color: @color-font-sec;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 53px;
+    height: 3px;
+    background-color: @color-divider-gr;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional__heading {
+    .heading-lowt();
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 29px;
+      height: 3px;
+      background-color: @color-divider-gr;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "";
+      width: 340px;
+      height: 3px;
+      background-color: @color-divider-gr;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .additional__heading {
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 80px;
+        height: 3px;
+        background-color: @color-divider-gr;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 950px;
+        height: 3px;
+        background-color: @color-divider-gr;
+      }
+    }
+  }
 }
