@@ -1,0 +1,19 @@
+.count-wrapper {
+  display: flex;
+  padding: 0 20px 0 20px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .count-wrapper {
+    padding: 0 0 0 30px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .count-wrapper {
+    flex-direction: column;
+    padding: 0 0 0 110px;
+  }
+}

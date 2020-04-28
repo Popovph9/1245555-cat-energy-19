@@ -1,9 +1,38 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 46px 0;
+}
+
 .description__heading {
   .heading-bigm();
+  margin: -3px 0 0 0;
+  padding: 0 0 0 19px;
 }
 
 @media (min-width: @tablet-width) {
+  .description {
+    margin: 0 0 40px 0;
+    padding: 0;
+
+    border-bottom: 1px solid @color-pgdivider;
+  }
+
   .description__heading {
     .heading-bigt();
+    margin: 15px 0 0 0;
+    padding: 0 0 0 29px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    border: none;
+    margin: 0;
+  }
+
+  .description__heading {
+    margin: 72px 0 0 0;
+    padding: 0 0 0 109px;
   }
 }

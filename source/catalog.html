@@ -8,7 +8,7 @@
 
   <body>
     <div class="page-wrapper">
-      <header class="page-header page-header--page-divider">
+      <header class="page-header page-header--page-divider page-header--main-header">
         <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="../img/logo-desktop.svg">
@@ -23,7 +23,7 @@
               <li class="site-list__item">
                 <a href="index.html">главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--active">
                 <a>каталог продукции</a>
               </li>
               <li class="site-list__item">
@@ -36,11 +36,13 @@
 
 
       <main class="page-main">
-        <section class="catalog-section">
-          <h1 class="catalog-section__catalog-title catalog-section__catalog-title--page-divider">Каталог продукции</h1>
+          <section class="title-section">
+            <h1 class="title-section__catalog-title">Каталог продукции</h1>
+          </section>
 
-            <ul class="catalog-list">
-              <li class="catalog-list__item catalog-list__item--page-divider">
+          <section class="catalog-section">
+            <ul class="catalog-list catalog-section__catalog-list">
+              <li class="catalog-list__item">
                 <div class="catalog-list__catalog-wrapper">
                   <a class="catalog-list__link" href="#">
                     <picture>
@@ -53,27 +55,27 @@
                   <div class="catalog-list__desc-wrapper">
                     <h3 class="catalog-list__heading">Cat Energy PRO 500 г</h3>
 
-                    <table class="catalog-list__text">
-                      <tr>
-                        <td class="catalog-list__term">объем</td>
-                        <td class="catalog-list__desc">500г</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">вкус</td>
-                        <td class="catalog-list__desc">курица</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">цена</td>
-                        <td class="catalog-list__desc">700р</td>
-                      </tr>
-                    </table>
+                    <ul class="catalog-list__text">
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Объем</p>
+                        <p class="catalog-list__desc">500г</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Вкус</p>
+                        <p class="catalog-list__desc">Курица</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Цена</p>
+                        <p class="catalog-list__desc">700 Р.</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
                 <a class="button button--catalog-button catalog-list__button" href="#">заказать</a>
               </li>
 
-              <li class="catalog-list__item catalog-list__item--page-divider">
+              <li class="catalog-list__item">
                 <div class="catalog-list__catalog-wrapper">
                   <a class="catalog-list__link" href="#">
                     <picture>
@@ -86,26 +88,26 @@
                   <div class="catalog-list__desc-wrapper">
                     <h3 class="catalog-list__heading">Cat Energy PRO 1000 г</h3>
 
-                    <table class="catalog-list__text">
-                      <tr>
-                        <td class="catalog-list__term">объем</td>
-                        <td class="catalog-list__desc">1000г</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">вкус</td>
-                        <td class="catalog-list__desc">курица</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">цена</td>
-                        <td class="catalog-list__desc">1000р</td>
-                      </tr>
-                    </table>
+                    <ul class="catalog-list__text">
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Объем</p>
+                        <p class="catalog-list__desc">1000г</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Вкус</p>
+                        <p class="catalog-list__desc">Курица</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Цена</p>
+                        <p class="catalog-list__desc">1000 Р.</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <a class="button button--catalog-button catalog-list__button" href="#">заказать</a>
               </li>
 
-              <li class="catalog-list__item catalog-list__item--page-divider">
+              <li class="catalog-list__item">
                 <div class="catalog-list__catalog-wrapper">
                   <a class="catalog-list__link" href="#">
                     <picture>
@@ -118,27 +120,27 @@
                   <div class="catalog-list__desc-wrapper">
                     <h3 class="catalog-list__heading">Cat Energy PRO 500 г</h3>
 
-                    <table class="catalog-list__text">
-                      <tr>
-                        <td class="catalog-list__term">объем</td>
-                        <td class="catalog-list__desc">500г</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">вкус</td>
-                        <td class="catalog-list__desc">рыба</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">цена</td>
-                        <td class="catalog-list__desc">700р</td>
-                      </tr>
-                    </table>
+                    <ul class="catalog-list__text">
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Объем</p>
+                        <p class="catalog-list__desc">500г</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Вкус</p>
+                        <p class="catalog-list__desc">Рыба</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Цена</p>
+                        <p class="catalog-list__desc">700 Р.</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
                 <a class="button button--catalog-button catalog-list__button" href="#">заказать</a>
               </li>
 
-              <li class="catalog-list__item catalog-list__item--page-divider">
+              <li class="catalog-list__item">
                 <div class="catalog-list__catalog-wrapper">
                   <a class="catalog-list__link" href="#">
                     <picture>
@@ -151,27 +153,27 @@
                   <div class="catalog-list__desc-wrapper">
                     <h3 class="catalog-list__heading">Cat Energy PRO 1000 г</h3>
 
-                    <table class="catalog-list__text">
-                      <tr>
-                        <td class="catalog-list__term">объем</td>
-                        <td class="catalog-list__desc">1000г</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">вкус</td>
-                        <td class="catalog-list__desc">рыба</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">цена</td>
-                        <td class="catalog-list__desc">1000р</td>
-                      </tr>
-                    </table>
+                    <ul class="catalog-list__text">
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Объем</p>
+                        <p class="catalog-list__desc">1000г</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Вкус</p>
+                        <p class="catalog-list__desc">Рыба</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Цена</p>
+                        <p class="catalog-list__desc">1000 Р.</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
                 <a class="button button--catalog-button catalog-list__button" href="#">заказать</a>
               </li>
 
-              <li class="catalog-list__item catalog-list__item--page-divider">
+              <li class="catalog-list__item">
                 <div class="catalog-list__catalog-wrapper">
                   <a class="catalog-list__link" href="#">
                     <picture>
@@ -184,26 +186,26 @@
                   <div class="catalog-list__desc-wrapper">
                     <h3 class="catalog-list__heading">Cat Energy PRO 500 г</h3>
 
-                    <table class="catalog-list__text">
-                      <tr>
-                        <td class="catalog-list__term">объем</td>
-                        <td class="catalog-list__desc">500г</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">вкус</td>
-                        <td class="catalog-list__desc">гречка</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">цена</td>
-                        <td class="catalog-list__desc">400р</td>
-                      </tr>
-                    </table>
+                    <ul class="catalog-list__text">
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Объем</p>
+                        <p class="catalog-list__desc">500г</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Вкус</p>
+                        <p class="catalog-list__desc">Гречка</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Цена</p>
+                        <p class="catalog-list__desc">400 Р.</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <a class="button button--catalog-button catalog-list__button" href="#">заказать</a>
               </li>
 
-              <li class="catalog-list__item catalog-list__item--page-divider">
+              <li class="catalog-list__item">
                 <div class="catalog-list__catalog-wrapper">
                   <a class="catalog-list__link" href="#">
                     <picture>
@@ -216,27 +218,27 @@
                   <div class="catalog-list__desc-wrapper">
                     <h3 class="catalog-list__heading">Cat Energy PRO 1000 г</h3>
 
-                    <table class="catalog-list__text">
-                      <tr>
-                        <td class="catalog-list__term">объем</td>
-                        <td class="catalog-list__desc">1000г</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">вкус</td>
-                        <td class="catalog-list__desc">гречка</td>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">цена</td>
-                        <td class="catalog-list__desc">700р</td>
-                      </tr>
-                    </table>
+                    <ul class="catalog-list__text">
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Объем</p>
+                        <p class="catalog-list__desc">1000г</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Вкус</p>
+                        <p class="catalog-list__desc">Гречка</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Цена</p>
+                        <p class="catalog-list__desc">700 Р.</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
                 <a class="button button--catalog-button catalog-list__button" href="#">заказать</a>
               </li>
 
-              <li class="catalog-list__item catalog-list__item--page-divider">
+              <li class="catalog-list__item">
                 <div class="catalog-list__catalog-wrapper">
                   <a class="catalog-list__link" href="#">
                     <picture>
@@ -249,27 +251,27 @@
                   <div class="catalog-list__desc-wrapper">
                     <h3 class="catalog-list__heading">Cat Energy PRO 500 г</h3>
 
-                    <table class="catalog-list__text">
-                      <tr>
-                        <td class="catalog-list__term">объем</td>
-                        <td class="catalog-list__desc">500г</td>
-                      </tr>
-                      <tr>
-                        <dt class="catalog-list__term">вкус</dt>
-                        <dd class="catalog-list__desc">рис</dd>
-                      </tr>
-                      <tr>
-                        <td class="catalog-list__term">цена</td>
-                        <td class="catalog-list__desc">500р</td>
-                      </tr>
-                    </table>
+                    <ul class="catalog-list__text">
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Объем</p>
+                        <p class="catalog-list__desc">500г</p>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <dt class="catalog-list__term">Вкус</dt>
+                        <dd class="catalog-list__desc">Рис</dd>
+                      </li>
+                      <li class="catalog-list__rows">
+                        <p class="catalog-list__term">Цена</p>
+                        <p class="catalog-list__desc">500 Р.</p>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
                 <a class="button button--catalog-button catalog-list__button" href="#">заказать</a>
               </li>
 
-              <li class="catalog-list__item  catalog-list__item--load-block">
+              <li class="catalog-list__item  catalog-list__item--spec-block">
                 <button class="catalog-list__sp-image"><?xml version="1.0" encoding="utf-8"?>
                   <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 30 30" style="enable-background: new 0 0 30 30;" xml:space="preserve">
@@ -281,9 +283,9 @@
                     <polygon class="st0" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
                   </svg>
                 </button>
-                <h3 class="catalog-list__heading">показать еще 100500 товаров</h3>
-                <p class="catalog-list__text">На самом деле вкусов гораздо больше!</p>
-                <a class="button button--spec catalog-list__button" href="#">показать все</a>
+                <h3 class="catalog-list__heading catalog-list__heading--spec-heading">показать еще 100500 товаров</h3>
+                <p class="catalog-list__text catalog-list__text--spec-text">На самом деле вкусов гораздо больше!</p>
+                <a class="button button--spec catalog-list__button catalog-list__button--spec" href="#">показать все</a>
               </li>
             </ul>
         </section>
@@ -294,45 +296,45 @@
           <ul class="goods-list additional__goods-list">
             <li class="goods-list__item goods-list__item--catalog-divider">
               <h3 class="goods-list__heading">Сахарозаменитель</h3>
-              <table class="goods-list__text">
-                <tr>
-                  <td class="goods-list__term">1 упаковка (100 г)</td>
-                  <td class="goods-list__desc">200 Р.</td>
-                </tr>
-              </table>
+              <ul class="goods-list__text">
+                <li>
+                  <p class="goods-list__term">1 упаковка (100 г)</p>
+                  <p class="goods-list__desc">200 Р.</p>
+                </li>
+              </ul>
               <a class="button button--goods-button goods-list__button" href="#">заказать</a>
             </li>
 
             <li class="goods-list__item goods-list__item--catalog-divider">
               <h3 class="goods-list__heading">Питьевая вода</h3>
-              <table class="goods-list__text">
-                <tr>
-                  <td class="goods-list__term">5 литров</td>
-                  <td class="goods-list__desc">50 Р.</td>
-                </tr>
-              </table>
+              <ul class="goods-list__text">
+                <li>
+                  <p class="goods-list__term">5 литров</p>
+                  <p class="goods-list__desc">50 Р.</p>
+                </li>
+              </ul>
               <a class="button button--goods-button goods-list__button" href="#">заказать</a>
             </li>
 
             <li class="goods-list__item goods-list__item--catalog-divider">
               <h3 class="goods-list__heading">Молоко</h3>
-              <table class="goods-list__text">
-                <tr>
-                  <td class="goods-list__term">1 литр</td>
-                  <td class="goods-list__desc">100 Р.</td>
-                </tr>
-              </table>
+              <ul class="goods-list__text">
+                <li>
+                  <p class="goods-list__term">1 литр</p>
+                  <p class="goods-list__desc">100 Р.</p>
+                </li>
+              </ul>
               <a class="button button--goods-button goods-list__button" href="#">заказать</a>
             </li>
 
             <li class="goods-list__item goods-list__item--catalog-divider">
               <h3 class="goods-list__heading">Витамины</h3>
-              <table class="goods-list__text">
-                <tr>
-                  <td class="goods-list__term">1 упаковка (30 г)</td>
-                  <td class="goods-list__desc">300 Р.</td>
-                </tr>
-              </table>
+              <ul class="goods-list__text">
+                <li>
+                  <p class="goods-list__term">1 упаковка (30 г)</p>
+                  <p class="goods-list__desc">300 Р.</p>
+                </li>
+              </ul>
               <a class="button button--goods-button goods-list__button" href="#">заказать</a>
             </li>
           </ul>
@@ -360,26 +362,30 @@
       </main>
 
       <footer class="page-footer">
-        <section class="footer-wrapper page-footer__footer-wrapper">
 
-          <h2 class="footer-wrapper__heading visually-hidden">Контакты и информация</h2>
-          <div class="contacts contacts--index footer-wrapper__contacts">
-            <div class="contacts__text">
-              <p>приглашаем к сотрудничеству дилеров!</p>
-            </div>
-            <div class="contacts__point">
-              <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            </div>
+        <h2 class="page-footer__heading visually-hidden">Контакты и информация</h2>
+
+        <section class="addres-section page-footer__addres-section">
+          <div class="contacts addres-section__contacts">
+            <span class="contacts__text">
+              <p>приглашаем <br> к сотрудничеству дилеров!</p>
+            </span>
+            <span class="contacts__point">
+              <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__city">Санкт-Петербург</p>
+            </span>
           </div>
 
-          <div class="map-section footer-wrapper__map-section">
+          <div class="map-section addres-section__map-section map-section--chisel">
             <picture>
               <source media="(min-width: 1300px)" srcset="../img/bg-map-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/bg-map-tablet@1x.png">
-              <img class="map"  src="../img/bg-map-mobile@1x.png" width="100%" height="400px" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <img class="map"  src="../img/bg-map-mobile@1x.png" width="100%" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
           </div>
+        </section>
 
+        <section class="footer-wrapper page-footer__footer-wrapper">
           <div class="footer-logo-section footer-wrapper__footer-logo-section footer-logo-section--footer-divider">
             <a href="index.html" class="footer-logo  footer-logo-section__footer-logo">
               <?xml version="1.0" encoding="utf-8"?>
@@ -419,65 +425,67 @@
             </a>
           </div>
 
-          <ul class="social-list footer-wrapper__list social-list--footer-divider">
-            <li class="vk-icon social-list__item">
-              <a href="#">
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12"
-                   viewBox="0 0 22 12" style="enable-background: new 0 0 22 12;" xml:space="preserve">
-                  <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
-                  c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
-                  s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
-                  C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4c0-0.5,0.5-0.9,0.9-1.1C8.3,0.1,9.1,0,10.1,0h0.5c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5v1.6
-                  c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9c0.6-0.9,1-1.9,1.1-2.1c0.1-0.3,0.4-0.7,1.2-0.7h3.4c0.7,0,1.2,0.2,1.3,0.7
-                  c0.2,0.5,0.1,1.3-1.7,3.5c-0.3,0.3-0.5,0.6-0.7,0.9c-0.5,0.4-0.9,1-0.9,1.1s0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3
-                  c0.4,0.6,0.3,1,0.2,1.3c-0.3,0.7-1.2,0.7-1.4,0.8h-2.8C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2
-                  c0.4,0.4,0.7,0.8,1.1,1c0.5,0.3,1,0.3,1,0.3h2.9c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1
-                  c-0.9-0.7-1.3-1.1-1.4-1.7c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3h-3.9c0,0.4-0.5,1.5-1.1,2.4
-                  c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1V3.9V2.6c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1H10
-                  c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
-                  C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
-                  c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"/>
-                </svg>
-              </a>
-            </li>
-            <li class="inst-icon social-list__item">
-              <a href="#"><?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
-                   viewBox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: #231f20;
-                    }
-                  </style>
-                  <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-                   M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
-                  <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-                  s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
-                  <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
-                </svg>
-              </a>
-            </li>
-            <li class="fb-icon social-list__item">
-              <a href="#"><?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="19"
-                   viewBox="0 0 10 19" style="enable-background: new 0 0 10 19;" xml:space="preserve">
-                  <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
-                  h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
-                  z"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="social-wrapper footer-wrapper__social-wrapper">
+            <ul class="social-list">
+              <li class="vk-icon social-list__item">
+                <a href="#">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12"
+                    viewBox="0 0 22 12" style="enable-background: new 0 0 22 12;" xml:space="preserve">
+                    <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+                    c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
+                    s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
+                    C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4c0-0.5,0.5-0.9,0.9-1.1C8.3,0.1,9.1,0,10.1,0h0.5c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5v1.6
+                    c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9c0.6-0.9,1-1.9,1.1-2.1c0.1-0.3,0.4-0.7,1.2-0.7h3.4c0.7,0,1.2,0.2,1.3,0.7
+                    c0.2,0.5,0.1,1.3-1.7,3.5c-0.3,0.3-0.5,0.6-0.7,0.9c-0.5,0.4-0.9,1-0.9,1.1s0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3
+                    c0.4,0.6,0.3,1,0.2,1.3c-0.3,0.7-1.2,0.7-1.4,0.8h-2.8C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2
+                    c0.4,0.4,0.7,0.8,1.1,1c0.5,0.3,1,0.3,1,0.3h2.9c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1
+                    c-0.9-0.7-1.3-1.1-1.4-1.7c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3h-3.9c0,0.4-0.5,1.5-1.1,2.4
+                    c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1V3.9V2.6c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1H10
+                    c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
+                    C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
+                    c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="inst-icon social-list__item">
+                <a href="#"><?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
+                    viewBox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #231f20;
+                      }
+                    </style>
+                    <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+                    M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
+                    <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
+                    s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
+                    <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="fb-icon social-list__item">
+                <a href="#"><?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="19"
+                    viewBox="0 0 10 19" style="enable-background: new 0 0 10 19;" xml:space="preserve">
+                    <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
+                    h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
+                    z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <div class="copyright-section footer-wrapper__copyright">
             <a class="copyright-link copyright-section__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright-slogan copyright-section__slogan">HTML Academy</p>
               <p class="copyright-logo copyright-section__logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
               </p>
             </a>
           </div>

@@ -1,0 +1,30 @@
+.map-section {
+  position: relative;
+}
+
+.map-section--chisel::after {
+  position: absolute;
+  top: 138px;
+  right: 137px;
+  content: url("../img/map-pin.png");
+  width: 55px;
+  height: 53px;
+}
+
+@media (min-width: @tablet-width) {
+  .map-section--chisel::after {
+    top: 146px;
+    right: 333px;
+    width: 113px;
+    height: 106px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-section--chisel::after {
+    top: 150px;
+    right: 329px;
+    width: 113px;
+    height: 106px;
+  }
+}

@@ -1,0 +1,25 @@
+.title-section {
+  border-bottom: 1px solid @color-pgdivider;
+}
+
+.title-section__catalog-title {
+  .heading-bigm();
+  margin: 14px 0 29px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .title-section {
+    border: none;
+  }
+
+  .title-section__catalog-title {
+    .heading-bigt();
+    margin: 32px 0 53px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-section__catalog-title {
+    margin: 72px 0 0 110px;
+  }
+}
