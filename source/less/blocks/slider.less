@@ -4,7 +4,7 @@
   width: 100%;
   justify-content: space-between;
 
-  font-family: "Oswald-Regular", sans-serif;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -27,7 +27,7 @@
   box-sizing: border-box;
   width: 84px;
   height: 14px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid @color-slider-border;
   border-radius: 6px;
   background-color: @color-bg-main;
 }
@@ -67,7 +67,7 @@
   .slider__label-from,
   .slider__label-to {
     padding: 0 0 6px 0;
-    border-bottom: 1px dotted #b8b8b8;
+    border-bottom: 1px dotted @color-slider-label;
   }
 
   .slider__label-from--bar::before {
@@ -77,7 +77,7 @@
     height: 6px;
     border: none;
     border-radius: 6px;
-    background-color: #dcdcdc;
+    background-color: @color-slider-bar;
   }
 
   .slider__label-to--toggle::before {
@@ -99,7 +99,7 @@
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    border: 1px solid #cdcdcd;
+    border: 1px solid @color-slider-border;
     background-color: @color-bg-main;
     z-index: 2;
   }

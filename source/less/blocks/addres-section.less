@@ -2,13 +2,31 @@
   position: relative;
 }
 
+.addres-section__contacts {
+  position: absolute;
+  z-index: 2;
+}
+
+.addres-section__map-section {
+  padding: 76px 0 0 0;
+}
+
+@media (min-width: @tablet-width) {
+  .addres-section__contacts {
+    position: relative;
+  }
+
+  .addres-section__map-section {
+    padding: 0;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .addres-section__contacts {
-    position: absolute;
     top: 95px;
     left: 110px;
     background-color: @color-bg-main;
+    position: absolute;
     z-index: 2;
   }
 }
