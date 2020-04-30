@@ -1,19 +1,18 @@
 .footer-logo-section {
   position: relative;
-}
-
-.footer-logo-section--footer-divider::after {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  content: "";
-  width: 280px;
-  height: 1px;
-  background-color: @color-footer-divider;
+  display: flex;
+  justify-content: center;
+  padding: 36px 0 29px 0;
 }
 
 @media (min-width: @tablet-width) {
-  .footer-logo-section--footer-divider::after {
-    display: none;
+  .footer-logo-section {
+    padding: 28px 0 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-logo-section {
+    padding: 0;
   }
 }

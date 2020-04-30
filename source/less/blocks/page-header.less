@@ -2,11 +2,16 @@
   border-bottom: 1px solid @color-pgdivider;
 }
 
+.page-header__logo-image {
+  margin: 11px 0 14px 20px;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
     width: 100%;
     flex-direction: row;
+    padding: 23px 30px;
 
     border: none;
   }
@@ -14,6 +19,8 @@
   .page-header__logo-image {
     width: 174px;
     height: 59px;
+
+    margin: 0;
   }
 }
 
@@ -22,12 +29,22 @@
     position: absolute;
     top: 0;
     right: 0;
+    left: 0;
     background-color: transparent;
-    justify-content: space-between;
+    padding: 54px 0 0 109px;
+    display: flex;
+
+    z-index: 2;
+  }
+
+  .page-header--main-header {
+    padding: 54px 0 0 110px;
   }
 
   .page-header__logo-image {
     width: 203px;
     height: 60px;
+
+    margin-right: 539px;
   }
 }

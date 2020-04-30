@@ -5,17 +5,22 @@
   font-size: 14px;
   line-height: 18px;
   color: @color-font-main;
+
+  padding: 4px 0 0 0;
+  margin: 0;
 }
 
 .list-of-desc__item {
   position: relative;
-  margin-bottom: 30px;
+  padding: 6px 0 0 100px;
+  margin: 20px 0 0 0;
 }
 
-.list-of-desc__item::after {
+
+.list-of-desc__text::after {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 4px;
+  left: 20px;
   content: "";
   width: 60px;
   height: 60px;
@@ -24,8 +29,8 @@
 
 .list-of-desc__icon-healthy::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 9px;
+  left: 25px;
   content: url("../img/advantage-leaf@1x.png");
   width: 26px;
   height: 29px;
@@ -34,8 +39,8 @@
 
 .list-of-desc__icon-powder::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 25px;
   content: url("../img/advantage-powder@1x.png");
   width: 29px;
   height: 31px;
@@ -44,8 +49,8 @@
 
 .list-of-desc__icon-ration::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 9px;
+  left: 24px;
   content: url("../img/advantage-dining@1x.png");
   width: 23px;
   height: 30px;
@@ -54,28 +59,91 @@
 
 .list-of-desc__icon-period::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 9px;
+  left: 25px;
   content: url("../img/advantage-clock@1x.png");
   width: 26px;
   height: 31px;
   z-index: 2;
 }
 
+.list-of-desc__text {
+  width: 194px;
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width: @tablet-width) {
+  .list-of-desc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
   .list-of-desc__item {
     .text-maint();
+    margin: 0 31px 61px 0;
+    padding: 0 0 0 30px;
+    min-width: 322px;
+  }
 
-    &::after {
-      width: 80px;
-      height: 80px;
-    }
+  .list-of-desc__text {
+    position: relative;
+    padding: 184px 0 0 0;
+  }
+
+  .list-of-desc__text--healthy {
+    width: 201px;
+  }
+
+  .list-of-desc__text--powder {
+    width: 222px;
+  }
+
+  .list-of-desc__text--ration {
+    width: 205px;
+  }
+
+  .list-of-desc__text--period {
+    width: 245px;
+  }
+
+  .list-of-desc__text::after {
+    position: absolute;
+    content: "";
+    top: 72px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: @color-bg-lo;
+  }
+
+  .list-of-desc__icon-healthy::before {
+    top: 87px;
+    left: 45px;
+  }
+
+  .list-of-desc__icon-powder::before {
+    top: 87px;
+    left: 46px;
+  }
+
+  .list-of-desc__icon-ration::before {
+    top: 87px;
+    left: 45px;
+  }
+
+  .list-of-desc__icon-period::before {
+    top: 87px;
+    left: 46px;
   }
 
   .list-of-desc__block-first::after {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 33px;
+    left: 148px;
     content: "1";
     .font-number();
     z-index: -1;
@@ -83,8 +151,8 @@
 
   .list-of-desc__block-second::after {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 33px;
+    left: 142px;
     content: "2";
     .font-number();
     z-index: -1;
@@ -92,19 +160,70 @@
 
   .list-of-desc__block-third::after {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 33px;
+    left: 143px;
     content: "3";
     .font-number();
     z-index: -1;
   }
 
-  .list-of-desc__block-fourth {
+  .list-of-desc__block-fourth::after {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 33px;
+    left: 144px;
     content: "4";
     .font-number();
     z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .list-of-desc {
+    padding: 0 0 0 110px;
+  }
+
+  .list-of-desc__item {
+    padding: 0;
+    min-width: 294px;
+  }
+
+  .list-of-desc__text::after {
+    top: 73px;
+  }
+
+  .list-of-desc__icon-healthy::before {
+    top: 88px;
+    left: 15px;
+  }
+
+  .list-of-desc__icon-powder::before {
+    top: 88px;
+    left: 15px;
+  }
+
+  .list-of-desc__icon-ration::before {
+    top: 88px;
+    left: 15px;
+  }
+
+  .list-of-desc__icon-period::before {
+    top: 88px;
+    left: 15px;
+  }
+
+  .list-of-desc__block-first::after {
+    left: 119px;
+  }
+
+  .list-of-desc__block-second::after {
+    left: 112px;
+  }
+
+  .list-of-desc__block-third::after {
+    left: 114px;
+  }
+
+  .list-of-desc__block-fourth::after {
+    left: 114px;
   }
 }

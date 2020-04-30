@@ -1,20 +1,31 @@
 .list-of-perks {
-  list-style: none;
+  .list-reset();
 }
 
 .list-of-perks__item {
   background-color: @color-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 35px 22px 19px;
+  margin: 20px 0 20px 0;
 }
 
 .list-of-perks__heading {
   position: relative;
   .heading-medm();
+  margin: 30px 0 0 0;
+  padding: 0 0 0 31px;
 }
 
-.list-of-perks__heading::after {
+.list-of-perks__heading--heading-bulk {
+  padding: 0 0 0 59px;
+}
+
+.list-of-perks__icon-green-circle-one::after {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -6px;
+  left: -38px;
   content: "";
   background-color: @color-bg-lo;
   width: 50px;
@@ -22,10 +33,22 @@
   border-radius: 50%;
 }
 
+.list-of-perks__icon-green-circle-two::after {
+  position: absolute;
+  top: -6px;
+  left: -10px;
+  content: "";
+  background-color: @color-bg-lo;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
 .list-of-perks__icon-slim::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -7px;
+  left: -30px;
   content: url("../img/icon-cat-slim.svg");
   width: 35px;
   height: 49px;
@@ -34,8 +57,8 @@
 
 .list-of-perks__icon-bulk::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 4px;
+  left: -19px;
   content: url("../img/icon-cat-pro.svg");
   width: 67px;
   height: 28px;
@@ -45,12 +68,15 @@
 .list-of-perks__text {
   position: relative;
   .text-main();
+  width: 226px;
+  margin: 29px 0 0 0;
+  padding: 0 0 23px 0;
 }
 
 .list-of-perks__text::after {
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: 0;
   content: "";
   width: 240px;
   height: 1px;
@@ -58,37 +84,81 @@
 }
 
 .list-of-perks__link {
-  font-family: "Oswald-Regular", sans-serif;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: @color-font-sec;
+
+  margin: 19px 0 0 0;
+  padding: 0 102px 0 0;
+}
+
+.list-of-perks__image {
+  margin: 0 0 0 8px;
 }
 
 @media (min-width: @tablet-width) {
+  .list-of-perks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .list-of-perks__heading {
     .heading-medt();
+    margin: 76px 0 0 0;
+    padding: 0 0 0 34px;
+  }
 
-    &::after {
-      width: 200px;
-      height: 200px;
-    }
+  .list-of-perks__icon-green-circle-one::after {
+    top: 16px;
+    left: 427px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .list-of-perks__icon-green-circle-two::after {
+    top: 15px;
+    left: 429px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .list-of-perks__item {
+    align-items: flex-start;
+    padding: 0 35px 0 19px;
+    margin: 0 0 30px 0;
   }
 
   .list-of-perks__text {
     .text-maint();
+    margin: 25px 0 0 0;
+    padding: 0 0 22px 33px;
 
     &::after {
       display: none;
     }
   }
 
+  .list-of-perks__text--slim {
+    width: 372px;
+  }
+
+  .list-of-perks__text--bulk {
+    width: 344px;
+  }
+
   .list-of-perks__icon-slim::before {
+    top: 3px;
+    left: 456px;
     width: 141px;
     height: 194px;
   }
 
   .list-of-perks__icon-bulk::before {
+    top: 59px;
+    left: 393px;
     width: 268px;
     height: 113px;
   }
@@ -96,21 +166,79 @@
   .list-of-perks__link {
     font-size: 20px;
     line-height: 20px;
+
+    margin: 35px 0 0 0;
+    padding: 0 0 61px 34px;
+  }
+
+  .list-of-perks__image {
+    margin: 0 0 3px 19px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .list-of-perks__heading::after {
+  .list-of-perks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .list-of-perks__item {
+    min-width: 570px;
+    padding: 0;
+    margin: 40px 80px 0 0;
+  }
+
+  .list-of-perks__heading {
+    padding: 0 0 0 214px;
+  }
+
+  .list-of-perks__text {
+    margin: 74px 0 0 0;
+    padding: 0 0 0 52px;
+  }
+
+  .list-of-perks__text--slim {
+    width: 462px;
+  }
+
+  .list-of-perks__text--bulk {
+    width: 445px;
+  }
+
+  .list-of-perks__link {
+    margin: 31px 0 0 0;
+    padding: 0 0 62px 53px;
+  }
+
+  .list-of-perks__image {
+    margin: 0 0 4px 19px;
+  }
+
+  .list-of-perks__icon-green-circle-one::after {
+    top: -29px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .list-of-perks__icon-green-circle-two::after {
+    top: -29px;
+    left: 52px;
     width: 100px;
     height: 100px;
   }
 
   .list-of-perks__icon-slim::before {
+    top: -36px;
+    left: 66px;
     width: 71px;
     height: 97px;
   }
 
   .list-of-perks__icon-bulk::before {
+    top: -7px;
+    left: 34px;
     width: 134px;
     height: 57px;
   }

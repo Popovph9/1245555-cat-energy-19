@@ -1,7 +1,116 @@
 .slider {
-  font-family: "Oswald-Regular", sans-serif;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+  font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: @color-font-sec;
+
+  padding: 14px 0;
+}
+
+.slider__label-from {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 63px;
+}
+
+.slider__label-from--bar::before {
+  position: absolute;
+  top: 3px;
+  left: 119px;
+  content: "";
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  border: 1px solid @color-slider-border;
+  border-radius: 6px;
+  background-color: @color-bg-main;
+}
+
+.slider__label-to {
+  position: relative;
+  margin: 0;
+  padding: 0 59px 0 0;
+}
+
+.slider__label-to--toggle::before {
+  position: absolute;
+  top: 7px;
+  right: 160px;
+  content: "";
+  width: 37px;
+  box-sizing: border-box;
+  height: 6px;
+  border: 1px solid @color-bg-sec;
+  border-radius: 3px;
+  background-color: @color-bg-sec;
+}
+
+@media (min-width: @tablet-width) {
+  .slider {
+    font-size: 20px;
+  }
+
+  .slider__label-from {
+    margin: 0 0 0 98px;
+  }
+
+  .slider__label-to {
+    margin: 0 100px 0 0;
+  }
+
+  .slider__label-from,
+  .slider__label-to {
+    padding: 0 0 6px 0;
+    border-bottom: 1px dotted @color-slider-label;
+  }
+
+  .slider__label-from--bar::before {
+    top: 8px;
+    left: 71px;
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: @color-slider-bar;
+  }
+
+  .slider__label-to--toggle::before {
+    top: 7px;
+    right: 280px;
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: @color-bg-sec;
+    z-index: 3;
+  }
+
+  .slider__label-to--control::after {
+    position: absolute;
+    content: "";
+    top: -7px;
+    right: 267px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid @color-slider-border;
+    background-color: @color-bg-main;
+    z-index: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__label-from {
+    margin: 0 0 0 211px;
+  }
+
+  .slider__label-to {
+    margin: 0 40px 0 0;
+  }
 }

@@ -1,46 +1,150 @@
 .example {
   background-color: @color-block;
+  display: flex;
+  flex-direction: column;
 }
 
 .example__heading {
   .heading-bigm();
+  margin: 0;
+  padding: 17px 0 0 20px;
 }
 
 .example__text {
   .text-main();
+  width: 266px;
+  margin: 23px 0 0 20px;
 }
 
 .example__cost {
-  font-family: "Oswald-Regular", sans-serif;
+  display: flex;
+  font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: @color-font-sec;
   text-transform: uppercase;
+
+  margin: 29px 0 0 47px;
+  text-align: center;
+}
+
+.example__cost-lable {
+  margin: 0 3px 0 0;
+  padding: 0;
+}
+
+.example__cost-index {
+  margin: 0;
+  padding: 0;
+}
+
+.example__count-wrapper {
+  margin: 20px 0 0 0;
+}
+
+.example__image {
+  margin: 37px 0 0 2px;
+}
+
+.example__slider {
+  margin: 20px 0 22px 0;
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    background-image: linear-gradient(to bottom, @color-bg-main 619px, @color-block 619px);
+  }
+
   .example__heading {
     .heading-bigt();
+    padding: 44px 0 0 30px;
   }
 
   .example__text {
     .text-maint();
+    width: 677px;
+    margin: 64px 0 0 0;
+    padding: 0 0 0 30px;
+  }
+
+  .example__count-wrapper {
+    margin: 48px 0 0 0;
+    padding: 0 0 0 30px;
   }
 
   .example__cost {
     font-size: 20px;
     line-height: 20px;
+    width: 243px;
+    text-align: right;
+    margin: 16px 32px 0 0;
+    flex-direction: column;
+  }
+
+  .example__cost-lable {
+    margin: 0 0 9px 0;
   }
 
   .example__image {
     width: 690px;
     height: 517px;
+
+    padding: 46px 0 0 44px;
+  }
+
+  .example__slider { // Временно для сетки //
+    margin: 2px 0 54px 0;
   }
 }
 
+
 @media (min-width: @desktop-width) {
+  .example {
+    flex-direction: row;
+    padding: 0 0 54px 0;
+    background-image: linear-gradient(to bottom, @color-bg-main 201px, @color-block 201px);
+  }
+
+  .example__wrapper-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example__text {
+    width: 438px;
+    margin: 146px 0 0 0;
+    padding: 0 0 0 111px;
+  }
+
+  .example__heading {
+    padding: 65px 0 0 109px;
+  }
+
+  .example__count-wrapper {
+    margin: 64px 0 0 0;
+    padding: 0 0 0 110px;
+  }
+
+  .example__cost {
+    width: 372px;
+    flex-direction: row;
+    margin: 56px 0 0 0;
+    padding: 0 0 0 1px;
+  }
+
+  .example__cost-lable {
+    margin: 0 63px 0 0;
+  }
+
   .example__image {
     width: 690px;
     height: 517px;
+
+    margin: 0;
+    padding: 11px 0 0 131px;
+  }
+
+  .example__slider {
+    margin: 23px 0 0 0;
   }
 }

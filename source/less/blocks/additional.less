@@ -40,28 +40,28 @@
       background-color: @color-divider-gr;
     }
   }
+}
 
-  @media (min-width: @desktop-width) {
-    .additional__heading {
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        width: 80px;
-        height: 3px;
-        background-color: @color-divider-gr;
-      }
+@media (min-width: @desktop-width) {
+  .additional__heading {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 80px;
+      height: 3px;
+      background-color: @color-divider-gr;
+    }
 
-      &::after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        content: "";
-        width: 950px;
-        height: 3px;
-        background-color: @color-divider-gr;
-      }
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "";
+      width: 950px;
+      height: 3px;
+      background-color: @color-divider-gr;
     }
   }
 }
