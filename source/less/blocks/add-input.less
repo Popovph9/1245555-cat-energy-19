@@ -1,0 +1,21 @@
+.add-input:checked ~ .data-label--custom-box::after {
+  position: absolute;
+  top: 2px;
+  left: -40px;
+  content: url("../img/icon-tick.svg");
+  width: 22px;
+  height: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .add-input:checked ~ .data-label--custom-box::after {
+    top: 0;
+    left: -47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-input:checked ~ .data-label--custom-box::after {
+    left: -49px;
+  }
+}

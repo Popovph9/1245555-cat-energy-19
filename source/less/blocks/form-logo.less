@@ -1,21 +1,47 @@
 .form-logo__heading {
   .heading-bigm();
+  margin: 14px 0 0 0;
+  padding: 0 0 0 19px;
 }
 
 .form-logo__text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: left;
+
+  width: 271px;
+  margin: 25px 0 0 0;
+  padding: 0 0 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .form-logo__heading {
     .heading-bigt();
+    margin: 32px 0 0 0;
+    padding: 0 0 0 28px;
   }
 
   .form-logo__text {
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
+
+    width: 322px;
+    margin: 55px 0 0 0;
+    padding: 0 0 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-logo__heading {
+    .heading-bigt();
+    margin: 71px 0 0 0;
+    padding: 0 0 0 110px;
+  }
+
+  .form-logo__text {
+    width: 322px;
+    padding: 0 0 0 110px;
   }
 }

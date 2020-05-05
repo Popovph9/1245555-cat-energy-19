@@ -1,10 +1,14 @@
 .comment-area {
   .heading-labm();
+  box-sizing: border-box;
 
   width: 280px;
   min-height: 150px;
 
   border: 1px solid @color-border;
+
+  margin: 34px 0 0 0;
+  padding: 13px 0 0 14px;
 }
 
 @media (min-width: @tablet-width) {
@@ -14,14 +18,15 @@
 
     width: 631px;
     min-height: 174px;
+
+    margin: 76px 0 0 70px;
+    padding: 10px 0 0 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment-area {
-    font-size: 20px;
-    line-height: 30px;
-
     width: 1220px;
+    margin: 76px 0 0 110px;
   }
 }

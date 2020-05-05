@@ -1,3 +1,32 @@
 .add-list {
   .list-reset();
+  padding: 40px 0 0 65px;
+}
+
+.add-list-item {
+  position: relative;
+  margin: 0 0 25px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .add-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 66px 46px 0 127px;
+  }
+
+  .add-list-item {
+    min-width: 250px;
+
+    margin: 0 0 50px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-list {
+    padding: 67px 46px 0 169px;
+  }
 }

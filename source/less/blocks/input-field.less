@@ -1,75 +1,94 @@
 .input-field {
   box-sizing: border-box;
+  min-height: 45px;
 
   .placeholder();
+
+  padding: 13px 0 0 14px;
 
   .input-state();
 }
 
+.input-field:focus:required:invalid {
+  border: 2px solid @color-err;
+}
+
+.input-field:required:valid {
+  .input-state();
+}
+
 .input-field--name-input {
-  width: 229px;
+  min-width: 229px;
 }
 
 .input-field--weight-input {
-  width: 204px;
+  min-width: 204px;
 }
 
 .input-field--age-input {
-  width: 172px;
+  min-width: 172px;
 }
 
 .input-field--email-field {
-  width: 219px;
+  min-width: 219px;
+}
+
+.input-field--email-field:active ~ .icon-email path,
+.input-field--tel-field:active ~ .icon-tel path {
+  fill: @color-butt;
 }
 
 .input-field--tel-field {
-  width: 204px;
+  min-width: 204px;
 }
 
 @media (min-width: @tablet-width) {
   .input-field {
     .placeholdert();
+
+    min-height: 52px;
+    padding: 13px 0 0 18px;
   }
 
   .input-field--name-input {
-    width: 567px;
+    min-width: 567px;
   }
 
   .input-field--weight-input {
-    width: 536px;
+    min-width: 536px;
   }
 
   .input-field--age-input {
-    width: 497px;
+    min-width: 497px;
   }
 
   .input-field--email-field {
-    width: 551px;
+    min-width: 551px;
   }
 
   .input-field--tel-field {
-    width: 535px;
+    min-width: 535px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .input-field--name-input {
-    width: 506px;
+    min-width: 506px;
   }
 
   .input-field--weight-input {
-    width: 475px;
+    min-width: 475px;
   }
 
   .input-field--age-input {
-    width: 436px;
+    min-width: 436px;
   }
 
   .input-field--email-field {
-    width: 486px;
+    min-width: 486px;
   }
 
   .input-field--tel-field {
-    width: 472px;
+    min-width: 472px;
   }
 }

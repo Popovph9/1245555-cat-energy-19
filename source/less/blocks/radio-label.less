@@ -1,3 +1,42 @@
 .radio-label {
   .heading-labm();
+  position: relative;
+}
+
+.radio-label--custom-radio::before {
+  position: absolute;
+  top: -2px;
+  left: -46px;
+  content: "";
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 1px solid @color-radio-border;
+  background-color: transparent;
+}
+
+.radio-label--custom-radio:hover::before,
+.radio-label--custom-radio:focus::before {
+  border-color: @color-radio-border-hov;
+}
+
+.radio-label--custom-radio:active {
+  opacity: 0.3;
+}
+
+.radio-label--custom-radio:active::before {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .radio-label {
+    .heading-labt();
+  }
+
+  .radio-label--custom-radio::before {
+    top: -4px;
+    left: -59px;
+    width: 39px;
+    height: 39px;
+  }
 }

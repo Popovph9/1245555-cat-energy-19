@@ -2,9 +2,12 @@
   position: relative;
   .heading__formmb();
 
+  margin: 28px 0 0 0;
+  padding: 0 0 0 19px;
+
   &::after {
     position: absolute;
-    top: 0;
+    top: 14px;
     right: 0;
     content: "";
     width: 136px;
@@ -16,10 +19,12 @@
 @media (min-width: @tablet-width) {
   .add-field__heading {
     .heading-lowt();
+    margin: 65px 0 0 0;
+    padding: 0 0 0 68px;
 
     &::before {
       position: absolute;
-      top: 0;
+      top: 22px;
       left: 0;
       content: "";
       width: 30px;
@@ -29,10 +34,10 @@
 
     &::after {
       position: absolute;
-      top: 0;
+      top: 22px;
       right: 0;
       content: "";
-      width: 400px;
+      width: 446px;
       height: 3px;
       background-color: @color-divider-gr;
     }
@@ -41,22 +46,25 @@
 
 @media (min-width: @desktop-width) {
   .add-field__heading {
+    margin: 66px 0 0 0;
+    padding: 0 0 0 109px;
+
     &::before {
       position: absolute;
-      top: 0;
+      top: 23px;
       left: 0;
       content: "";
-      width: 80px;
+      width: 70px;
       height: 3px;
       background-color: @color-divider-gr;
     }
 
     &::after {
       position: absolute;
-      top: 0;
+      top: 23px;
       right: 0;
       content: "";
-      width: 970px;
+      width: 1078px;
       height: 3px;
       background-color: @color-divider-gr;
     }

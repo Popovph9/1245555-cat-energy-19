@@ -1,6 +1,13 @@
 .present {
+  margin: 37px 0 0 0;
+
   background: url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
   background-color: @color-bg-sec;
+}
+
+.present__present-icon {
+  margin: 64px 0 0 0;
+  padding: 0 0 0 113px;
 }
 
 .present__present-icon path {
@@ -12,4 +19,55 @@
   font-size: 16px;
   line-height: 20px;
   color: @color-font-thr;
+  text-align: center;
+
+  width: 161px;
+  margin: 59px 0 42px 0;
+  padding: 0 59px 0 60px;
+}
+
+@media (min-width: @tablet-width) {
+  .present {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin: 67px 0 0 0;
+
+    background: url("../img/gift-photo-tablet@1x.jpg") center no-repeat;
+  }
+
+  .present__text {
+    text-align: left;
+
+    margin: 73px 0 67px 0;
+    padding: 0 59px 0 277px;
+  }
+
+  .present__present-icon {
+    margin: 65px 0 0 0;
+    padding: 0 0 0 91px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .present {
+    flex-direction: column;
+
+    width: auto;
+    margin: 8px 0 0 80px;
+
+    background: url("../img/gift-photo-desktop@1x.jpg") center no-repeat;
+  }
+
+  .present__text {
+    text-align: center;
+    margin: 60px 0 67px 0;
+    padding: 0 43px 0 41px;
+  }
+
+  .present__present-icon {
+    margin: 88px 0 0 0;
+    padding: 0 0 0 96px;
+  }
 }
