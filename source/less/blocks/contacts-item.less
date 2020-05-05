@@ -1,0 +1,51 @@
+.contacts-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-item__icon-email {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+}
+
+.contacts-item__icon-tel {
+  position: absolute;
+  top: 11px;
+  right: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-item__data-label {
+    padding: 14px 0 0 0;
+  }
+
+  .contacts-item__icon-email {
+    position: absolute;
+    top: 18px;
+    right: 21px;
+  }
+
+  .contacts-item__icon-tel {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-item--email-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 568px;
+  }
+
+  .contacts-item--tel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 572px;
+  }
+}
