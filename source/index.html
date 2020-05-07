@@ -5,6 +5,7 @@
     <title>HTML Academy: кэт энерджи главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <script src="js/picturefill.js" async></script>
     <link href="css/style.css" rel="stylesheet" >
   </head>
 
@@ -41,9 +42,9 @@
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__slogan">занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img class="hero__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="продукция кэт энерджи">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="hero__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="продукция кэт энерджи">
           </picture>
           <a class="button button--index-button hero__button" href="form.html">подобрать программу</a>
         </section>
@@ -119,9 +120,9 @@
 
         <div class="example__wrapper-pics">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img class="example__image" src="img/before-mobile@1x.png" width="311" height="232" alt="фото кота">
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="фото кота">
             </picture>
 
             <div class="slider example__slider">
@@ -150,9 +151,9 @@
 
           <div class="map-section addres-section__map-section map-section--chisel">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-              <img class="map-section__image"  src="img/bg-map-mobile@1x.png" width="100%" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="map-section__image"  src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="100%" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
             <iframe class="web-map map-section__web-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6458953087902!2d30.32251095685015!3d59.
             93801780861601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3Qv

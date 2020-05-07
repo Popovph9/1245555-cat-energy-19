@@ -5,6 +5,7 @@
     <title>HTML Academy: кэт энерджи форма</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <script src="js/picturefill.js" async></script>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -55,12 +56,12 @@
 
                 <p class="data-item data-field__data-item">
                   <label class="data-label data-item__data-label" for="weight-field">Вес (кг):*</label>
-                  <input class="input-field data-item__input-field input-field--weight-input" type="number" name="weight-field" id="weight-field" placeholder="7" required>
+                  <input class="input-field data-item__input-field input-field--weight-input" type="text" name="weight-field" id="weight-field" placeholder="7" required>
                 </p>
 
                 <p class="data-item data-field__data-item">
                   <label class="data-label data-item__data-label" for="age-field">Возраст (лет):</label>
-                  <input class="input-field data-item__input-field input-field--age-input" type="number" name="age-field" id="age-field" placeholder="7">
+                  <input class="input-field data-item__input-field input-field--age-input" type="text" name="age-field" id="age-field" placeholder="7">
                 </p>
               </div>
 
@@ -174,9 +175,9 @@
 
           <div class="map-section addres-section__map-section map-section--chisel">
             <picture>
-              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-              <img class="map-section__image"  src="img/bg-map-mobile@1x.png" width="100%" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="map-section__image"  src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="100%" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
             <iframe class="web-map map-section__web-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6458953087902!2d30.32251095685015!3d59.93801780861601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588180664539!5m2!1sru!2sru" width="100%" height="400"  style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
