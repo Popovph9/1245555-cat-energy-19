@@ -73,6 +73,40 @@
   margin: 0;
 }
 
+@media (min-resolution: @retina-dpi) {
+  .list-of-desc__icon-healthy::before {
+    top: 19px;
+    left: 37px;
+    content: "";
+    background: url("../img/advantage-leaf@2x.png") center no-repeat;
+    background-size: 50px 50px;
+  }
+
+  .list-of-desc__icon-powder::before {
+    top: 18px;
+    left: 36px;
+    content: "";
+    background: url("../img/advantage-powder@2x.png") center no-repeat;
+    background-size: 50px 50px;
+  }
+
+  .list-of-desc__icon-ration::before {
+    top: 19px;
+    left: 38px;
+    content: "";
+    background: url("../img/advantage-dining@2x.png") center no-repeat;
+    background-size: 50px 50px;
+  }
+
+  .list-of-desc__icon-period::before {
+    top: 19px;
+    left: 37px;
+    content: "";
+    background: url("../img/advantage-clock@2x.png") center no-repeat;
+    background-size: 50px 50px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .list-of-desc {
     display: flex;
@@ -175,6 +209,28 @@
     .font-number();
     z-index: -1;
   }
+
+  @media (min-resolution: @retina-dpi) {
+    .list-of-desc__icon-healthy::before {
+      top: 98px;
+      left: 57px;
+    }
+
+    .list-of-desc__icon-powder::before {
+      top: 97px;
+      left: 56px;
+    }
+
+    .list-of-desc__icon-ration::before {
+      top: 98px;
+      left: 59px;
+    }
+
+    .list-of-desc__icon-period::before {
+      top: 97px;
+      left: 58px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -225,5 +281,27 @@
 
   .list-of-desc__block-fourth::after {
     left: 114px;
+  }
+
+  @media (min-resolution: @retina-dpi) {
+    .list-of-desc__icon-healthy::before {
+      top: 99px;
+      left: 27px;
+    }
+
+    .list-of-desc__icon-powder::before {
+      top: 98px;
+      left: 26px;
+    }
+
+    .list-of-desc__icon-ration::before {
+      top: 98px;
+      left: 29px;
+    }
+
+    .list-of-desc__icon-period::before {
+      top: 98px;
+      left: 27px;
+    }
   }
 }
