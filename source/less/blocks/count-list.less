@@ -81,6 +81,7 @@
       font-size: 14px;
       line-height: 14px;
       padding: 0 9px 0 8px;
+      background-color: @color-bg-main;
     }
   }
 
@@ -94,6 +95,17 @@
       font-size: 14px;
       line-height: 14px;
       padding: 0 9px 0 8px;
+      background-color: @color-bg-main;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .count-list__item--weight::after {
+    background-color: @color-block;
+  }
+
+  .count-list__item--time::after {
+    background-color: @color-block;
   }
 }
