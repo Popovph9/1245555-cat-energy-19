@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <script src="js/picturefill.js" async></script>
-    <link href="css/style.css" rel="stylesheet" >
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="css/style.min.css" rel="stylesheet" >
   </head>
 
   <body>
@@ -40,7 +43,7 @@
       <main class="page-main">
         <section class="hero">
           <h1 class="hero__title">Функциональное питание для котов</h1>
-          <p class="hero__slogan">занялся собой? Займись котом!</p>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
@@ -61,7 +64,7 @@
               <p class="list-of-perks__text list-of-perks__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="list-of-perks__link" href="#">
                 Каталог Slim
-                <svg class="link-image list-of-perks__image" width="25" height="12"><use xlink:href="img/sprite.svg#link-image"></use></svg>
+                <svg class="link-image list-of-perks__image" width="25" height="12"><use xlink:href="img/sprite.svg#icon-right-arrow-long"></use></svg>
               </a>
             </li>
             <li class="list-of-perks__item">
@@ -69,7 +72,7 @@
               <p class="list-of-perks__text list-of-perks__text--bulk">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="list-of-perks__link" href="#">
                 Каталог pro
-                <svg class="link-image list-of-perks__image" width="25" height="12"><use xlink:href="img/sprite.svg#link-image"></use></svg>
+                <svg class="link-image list-of-perks__image" width="25" height="12"><use xlink:href="img/sprite.svg#icon-right-arrow-long"></use></svg>
               </a>
             </li>
           </ul>
@@ -113,10 +116,10 @@
                 </li>
               </ul>
 
-              <span class="example__cost">
+              <div class="example__cost">
                 <p class="example__cost-lable">Затраты на питание:</p>
                 <p class="example__cost-index">15 000 руб.</p>
-              </span>
+              </div>
             </div>
         </div>
 
@@ -146,13 +149,13 @@
 
         <section class="addres-section page-footer__addres-section">
           <div class="contacts contacts--index addres-section__contacts">
-            <span class="contacts__text">
+            <div class="contacts__text">
               <p>приглашаем <br> к сотрудничеству дилеров!</p>
-            </span>
-            <span class="contacts__point">
+            </div>
+            <div class="contacts__point">
               <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
               <p class="contacts__city">Санкт-Петербург</p>
-            </span>
+            </div>
           </div>
 
           <div class="map-section addres-section__map-section map-section--chisel">
@@ -163,12 +166,10 @@
 
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="map-section__image"  src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="100%" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+              <img class="map-section__image"  src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" style="width: 100%;" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
             </picture>
-            <iframe class="web-map map-section__web-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6458953087902!2d30.32251095685015!3d59.
-            93801780861601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3Qv
-            dCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588180664539!5m2!1sru!2sru"
-            width="100%" height="400"  style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="web-map map-section__web-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6458953087902!2d30.32251095685015!3d59.93801780861601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588180664539!5m2!1sru!2sru"
+            style="width: 100%;" height="400" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </section>
 
@@ -177,7 +178,7 @@
             <a class="footer-logo  footer-logo-section__footer-logo">
               <p class="visually-hidden">Перехода на главную страницу сайта</p>
 
-              <svg width="128" height="24"><use xlink:href="img/sprite.svg#footer-logo"></use></svg>
+              <svg width="128" height="24"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
             </a>
           </div>
 
@@ -186,19 +187,19 @@
               <li class="social-list__item">
                 <a href="#">
                   <p class="visually-hidden">Вконтакте</p>
-                  <svg class="vk-icon" width="22" height="12"><use xlink:href="img/sprite.svg#vk-icon"></use></svg>
+                  <svg class="vk-icon" width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
                 </a>
               </li>
               <li class="social-list__item">
                 <a href="#">
                   <p class="visually-hidden">Инстаграм</p>
-                  <svg class="inst-icon" width="17" height="17"><use xlink:href="img/sprite.svg#inst-icon"></use></svg>
+                  <svg class="inst-icon" width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
                 </a>
               </li>
               <li class="social-list__item">
                 <a>
                   <p class="visually-hidden">Фэйсбук</p>
-                  <svg class="fb-icon" width="10" height="19"><use xlink:href="img/sprite.svg#fb-icon"></use></svg>
+                  <svg class="fb-icon" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
                 </a>
               </li>
             </ul>
@@ -207,7 +208,7 @@
           <div class="copyright-section footer-wrapper__copyright-section">
             <a class="copyright-link copyright-section__link" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright-slogan copyright-section__slogan">HTML Academy</p>
-              <svg class="copyright-logo copyright-section__logo"  width="42" height="40"><use xlink:href="img/sprite.svg#copyright-logo"></use></svg>
+              <svg class="copyright-logo copyright-section__logo"  width="42" height="40"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
             </a>
           </div>
         </section>
