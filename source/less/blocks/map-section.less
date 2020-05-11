@@ -9,9 +9,11 @@
 
 .map-section--chisel::after {
   position: absolute;
-  top: 200px;
-  right: 166px;
-  content: url("../img/map-pin.png");
+  top: 253px;
+  right: 133px;
+  content: "";
+  background: url("../img/map-pin.png") center no-repeat;
+  background-size: 55px 53px;
   width: 55px;
   height: 53px;
 }
@@ -21,12 +23,15 @@
   z-index: 1;
   bottom: 0;
   right: 0;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
   .map-section--chisel::after {
     top: 146px;
     right: 333px;
+    background: none;
+    content: url("../img/map-pin.png");
     width: 113px;
     height: 106px;
   }
